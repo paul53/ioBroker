@@ -19,7 +19,7 @@ const commonUser = { // nicht benötigte Attribute auskommentieren
 };
 
 function createDp(id, common) {
-    if($(id).length) log('Datenpunkt ' + id + ' existiert bereits !', 'warn');
+    if(existsState(id)) log('Datenpunkt ' + id + ' existiert bereits !', 'warn');
     else {
         var obj = {};
         obj.type = 'state';
